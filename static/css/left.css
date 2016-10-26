@@ -1,0 +1,27 @@
+/* CSS Document */
+html{height:100%;}
+*{margin:0; padding:0;}
+a{ text-decoration:none;}
+img{border:none;}
+ul li{list-style:none;}
+.left{float:left;}
+.right{float:right;}
+.slide{width:145px; background-color:#a52a2a; /*background-color:#3e4752;*/ height:100%;  position:absolute; top:0; left:0;}
+.slide1{margin-top:32px;}
+.slide-nav{ margin-bottom:1px;}
+.slide-nav p{position:relative; background-color:#b82c2c; /*background:#525c69;*/text-indent:15px; color:#cbd0d7;font-size:14px;height:35px; line-height:35px; cursor:pointer;}
+.slide-nav p i{background:url(../img/zhankai.png) no-repeat; display:block; position:absolute; right:10px; top:15px;width:15px; height:15px;}
+.slide-nav div a{display:block;color:#878b91; background:#861c1c; /*background:#323a43;*/border-bottom:1px solid #771212 /*#454e59*/;font-size:12px;height:33px; line-height:33px; text-indent:15px;}
+.slide-nav div a.curent{color:#fff ;border-left:4px solid #f1495b; background:#22272d;}
+
+.slide-dbts{font-size:12px;color:#bdbdbd; line-height:23px; padding-left:10px; position:absolute; bottom:10px;}
+.slide-dbts a{color:#bdbdbd;display:block;}
+.slide-dbts a:hover{color:#f1495b ;}
+
+
+.table {
+	BORDER-BOTTOM: 0px; TEXT-ALIGN: center; BORDER-LEFT: 0px; MARGIN: 5px; BORDER-SPACING: 0px; BORDER-COLLAPSE: collapse; FONT-SIZE: 12px; BORDER-TOP: #d8e9f9 1px solid; BORDER-RIGHT: #d8e9f9 1px solid
+}
+.table TD {
+	BORDER-BOTTOM: #d8e9f9 1px solid; BORDER-LEFT: #d8e9f9 1px solid; PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; BORDER-SPACING: 0px; PADDING-RIGHT: 4px; BORDER-COLLAPSE: collapse; WORD-BREAK: break-all; BORDER-TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 4px
+}

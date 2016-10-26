@@ -1,0 +1,24 @@
+/* CSS Document */
+
+*{margin:0; padding:0;}
+a{ text-decoration:none;}
+img{border:none;}
+ul li{list-style:none;}
+.left{float:left;}
+.right{float:right;}
+
+.top{width:100%;background:#f1495b;color:#FFF;height:80px;}
+.cszd{line-height:80px;font-weight:bold; margin-left:20px;/*width:250px;*/font-size:27px;}
+.cszd span:first-child{font-size:16px;}
+
+.nav{position:absolute;right:0px;top:0px; padding-right:120px;}
+.nav ul li{float:left; margin-right:10px; display:inline;}
+.nav ul li a{color:#FFF;font-size:12px;height:80px;width:70px;display:block; text-align:center;}
+.nav ul li a img{margin:14px 0 10px 0;}
+/*.nav ul li a:hover{background:#bc3239;}*/
+.curent{ background:#bc3239 url(../img/nav-sj.png) bottom no-repeat;}
+.tuichu a{position:absolute;color:#fff; right:15px; top:29px;font-size:12px; background:url(../../Images/tuichu.png) left no-repeat;height:23px; line-height:25px; padding-left:27px;}
+
+
+
+

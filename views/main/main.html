@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>项目修改日志</title>
+    <link href="/css/default.css" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" type="text/css" href="/scripts/easyui/themes/icon.css">-->
+    <link rel="stylesheet" type="text/css" href="/scripts/easyui/themes/metro/easyui.css">
+    <link rel="stylesheet" type="text/css" href="/scripts/easyui/themes/icon.css">
+
+    <link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+	<script type="text/javascript" src="/layui/layui.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/scripts/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+    <script>
+    layui.use('laydate', function(){
+        //var form =layui.form()
+          var   laydate = layui.laydate;
+
+
+         //监听提交
+        // form.on('submit(demo1)', function(data){ layer.alert(JSON.stringify(data.field), { title: '最终的提交信息' }) return false; });
+
+    });
+
+    function login1() {
+		    $('#login_form').ajaxSubmit(function (data) {
+            
+		       // alert(data.id);
+		       // if (data != "1") {
+		            //jQuery.messager.alert('登录失败', "用户名或密码错误!", "info");
+		        //} else {
+		            //window.location = "/main";
+		       // }
+		    });
+		    return false;
+            $('#ff').form('load',row);
+		}
+    </script>
+    
+    </head>
+    <body>
+        <div>
+           <!--<h1>项目修改日志</h1>-->
+          <!-- <ul class="layui-nav" style="height:200px">
+             <li class="layui-nav-item"><a href=""></a></li>
+             <li class="layui-nav-item layui-this"><a href=""></a></li>
+             <li class="layui-nav-item"><a href=""></a></li>
+             <li class="layui-nav-item"><a href=""></a></li>
+             <h3>项目管理系统</h3>
+             <font face="name" size=4  color="red">项目管理系统</font>
+            
+           </ul>-->
+           <div style="font-size:100px;text-align:center;background:#7E3D76; color:#FFF;height:200">项目修改日志</div>
+        </div>
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top:40px;">
+      <!-- <legend></legend>-->
+       </fieldset>
+       <!--<div style="margin: 0 auto">-->
+       <div  style="text-align:center;width:400px;margin: 0 auto">
+       <form id="login_form"  class="layui-form layui-form-pane" action="/main/post" method="post" name="login1">
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="">项目名称：</label>
+        <div class="layui-input-block"> 
+         <input text="text" name="xiangmuname" required  lay-verify="required" placeholder="请输入项目名" autocomplete="off" style="width:200px" class="layui-input">
+        </div>        
+        </div>
+        <div class="layui-form-item" style="text-align:center">
+         <label class="layui-form-label">输入日期：</label>
+         <div class="layui-input-block">
+           <input class="layui-input" name="time" placeholder="自定义日期格式" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD hh:mm:ss'})" style="width:200px">
+         </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">修改人：</label>
+        <div class="layui-input-block"> 
+         <input text="text" name="xiugairen" required  lay-verify="required" placeholder="修改人" autocomplete="off" style="width:200px" class="layui-input">
+        </div>
+        
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">修改信息：</label>
+            <div class="layui-input-block"> 
+            <textarea name="xiugaixinxi" required lay-verify="required" placeholder="请输入" class="layui-textarea" style="width:500px"></textarea>   
+            </div>
+        </div>
+
+      <div class="layui-form-item">  
+          <div class="layui-input-block">
+          <button class="layui-btn"  lay-filter="demo1" onclick="login1()">立即提交</button>
+          <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          
+          <button class="layui-btn">查       询</button>
+          </div>
+      </div>
+        
+       </form>
+       </div>
+       <!--<div style="width:400px;float:right;text-align:right">
+           <table class="easyui-datagrid" style="width:1000px;height:250px"
+            url="/data/menu" 
+            title="显示信息" toolbar="#tb" id="tt"  iconCls="icon-search"
+            singleSelect="true" fitColumns="true" fit="true">
+        <thead>
+            <tr>
+                <th field="ID" width="60">ID</th>
+                <th field="Xiangmuname" width="80">名称</th>
+                <th field="Time" align="right" width="70">排序</th>
+                <th field="Xiugainame" align="right" width="70">图标</th>
+                <th field="Beizhuinfor" width="200">URL地址</th>
+               <th field="memo" width="50">备注</th>
+            </tr>
+        </thead>
+    </table>
+       </div>-->
+       <!--</div>-->
+    </body>
+</html>
