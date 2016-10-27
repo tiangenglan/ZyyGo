@@ -9,6 +9,6 @@ type LoginController struct{
     beego.Controller
 }
 //登录页面
-func (c *LoginController0) Get()  {
+func (c *LoginController) Get()  {
     fmt.Println("denglu")
 }
